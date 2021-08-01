@@ -168,13 +168,12 @@ DOM 레벨2의기능사용방법도있음
 
 Screen Shot 2021-07-31 at 2.56.32 PM![Screen Shot 2021-07-31 at 2 56 32 PM](https://user-images.githubusercontent.com/84766081/127730364-099f3889-b0be-4a46-8982-821db8207f82.png)
                                 
-                                
-
-<< 자바스크립트 문자열 다루기 2. 날짜, 시간, 그리고 >>
                                
-Day1 : 1 August 2021
+                               
+Day2 : 1 August 2021
 
 << 자바스크립트 문자열 다루기 3. 날짜,시간 타이머>>
+  
 Screen Shot 2021-08-01 at 1.16.16 PM![Screen Shot 2021-08-01 at 1 16 16 PM](https://user-images.githubusercontent.com/84766081/127759374-953a3035-a596-4889-973a-b51754aaf751.png)
 Screen Shot 2021-08-01 at 1.16.26 PM![Screen Shot 2021-08-01 at 1 16 26 PM](https://user-images.githubusercontent.com/84766081/127759375-49dbb8c9-f0e7-4734-bb3c-b095d4cc03a4.png)
 
@@ -265,6 +264,96 @@ Screen Shot 2021-08-01 at 2.13.27 PM![Screen Shot 2021-08-01 at 2 13 27 PM](http
 Screen Shot 2021-08-01 at 2.13.35 PM![Screen Shot 2021-08-01 at 2 13 35 PM](https://user-images.githubusercontent.com/84766081/127759964-5c06eff8-0edf-44a8-a809-79a8e490d151.png)
 
   
+<< 자바스크립트 문자열 다루기 5. 배열과 반복문  >>
+
+0.
+배열은 순서가 매겨진 원소의 집합
+Screen Shot 2021-08-01 at 11.11.05 PM![Screen Shot 2021-08-01 at 11 11 05 PM](https://user-images.githubusercontent.com/84766081/127773984-30c562c1-df89-4a2f-a34b-7e5b18ec2805.png)
+
+- JS엔진에 있어 배열 리터럴은 접근할때마다 특히 함수호출마다매번재해석해야하는대상
+- 배열 리터럴은 함수에 값을 전달하려고 만들었던 임시 변수대체할수있다는 장점이있음
+
+1.
+반복문에서 배열 사용하기
+
+- for / while
+Screen Shot 2021-08-01 at 11.21.45 PM![Screen Shot 2021-08-01 at 11 21 45 PM](https://user-images.githubusercontent.com/84766081/127774354-538d1c7b-b3bc-4a3e-bef7-5ab45d0c056b.png)
+Screen Shot 2021-08-01 at 11.21.49 PM![Screen Shot 2021-08-01 at 11 21 49 PM](https://user-images.githubusercontent.com/84766081/127774357-770f6971-80f1-4568-ab08-eb2f1b9bb52d.png)
+
+3.
+배열에서 문자열 만들기
+  
+- array객체 내장매서드 join: 배열원소를묶어 문자열로 만들수있다.
+Screen Shot 2021-08-01 at 11.27.37 PM![Screen Shot 2021-08-01 at 11 27 37 PM](https://user-images.githubusercontent.com/84766081/127774532-e561038f-27e8-4d30-bb26-c49170eb7570.png)
+
+- 인자로 구분자를 전달할수있는데 생략시 쉼표삽입됨
+
+4.
+배열 정렬하기
+
+- array객체 내장매서드 sort: 배열정렬(기본 오름차순 정렬순서바꾸고싶으면 reverse)
+Screen Shot 2021-08-01 at 11.30.13 PM![Screen Shot 2021-08-01 at 11 30 13 PM](https://user-images.githubusercontent.com/84766081/127774620-f9a05613-c5bc-48f0-9a99-c661b28fce46.png)
+
+5.
+값에 순차적으로저장접근
+
+- FIFO 큐작성: Array객체의 push메서드사용/shift매서드 사용으로 큐에서 원소 추출
+Screen Shot 2021-08-01 at 11.36.02 PM![Screen Shot 2021-08-01 at 11 36 02 PM](https://user-images.githubusercontent.com/84766081/127774812-ae849ba9-6b94-418b-9f7a-65849adb84e7.png)
+
+6.
+값을 저장하고 역순접근
+
+- LIFO 스택작성: Array객체의 push메서드 사용 스택 원소 추가, pop메서드사용 스택 원소 추출
+
+Screen Shot 2021-08-01 at 11.38.25 PM![Screen Shot 2021-08-01 at 11 38 25 PM](https://user-images.githubusercontent.com/84766081/127774890-b53582d0-82d1-44d7-a792-7841b9812833.png)
+Screen Shot 2021-08-01 at 11.38.29 PM![Screen Shot 2021-08-01 at 11 38 29 PM](https://user-images.githubusercontent.com/84766081/127774892-b76d5ad6-4bda-4302-8473-27b831209dab.png)
+
+7.
+기존 배열 부분 집합 새 배열 작성
+
+- Array객체의 slice메서드: 주어진범위의 원소를 기반으로 새 배열을 만들수있다.
+
+8.
+배열 탐색
+
+- indexOf : 가장처음에 찾은 값 반환
+- lastIndexOf : 가장 마지막에 찾은 값 반환
+- 모든브라우저가 지원하는하지않음
 
 
-                                
+9.
+다차원 배열 평평하게 만들기
+
+- Array객체의 concat메서드 사용 다차원 배열 1차원배열로만들수있다.
+Screen Shot 2021-08-01 at 11.52.58 PM![Screen Shot 2021-08-01 at 11 52 58 PM](https://user-images.githubusercontent.com/84766081/127775371-3db3da10-e195-48e9-bf23-7bc2875114aa.png)
+
+10. 
+배열 원소 검색 없애거나 바꾸기
+
+- Array의 indexOf와 splice메서드 사용하면 배열 원소 찾아 제거하거나 치환가능
+
+11.
+각 배열 원소에 함수 적용
+
+- Array객체의 forEach사용 각 배열 원소에 콜백함수추가가능
+
+12.
+배열의 모든 원소에 함수 적용하고 새로운 배열 반환
+
+- Array의 map메서드 사용
+Screen Shot 2021-08-02 at 12.04.05 AM![Screen Shot 2021-08-02 at 12 04 05 AM](https://user-images.githubusercontent.com/84766081/127775724-d08da461-9148-41d0-a53c-33acd5b844ac.png)
+
+- 세개인수전달: 각각 현재의 배열원소, 배열 원소의 인덱스, 배열
+
+13. 
+값을 걸러낸 배열 작성
+
+- Array객체의 filter메서드사용
+
+14.
+배열 콘텐츠 유효성 검사
+
+- Array객체의 every메서드 사용: 모든 원소 주어진 조건 통화하는지 확인가능
+- Array객체의 some메서드 사용: 주어진 조건 만족시키는 요소가 최소 1개 이상있는지 확인가능
+  
+
