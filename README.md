@@ -169,7 +169,9 @@ DOM 레벨2의기능사용방법도있음
 Screen Shot 2021-07-31 at 2.56.32 PM![Screen Shot 2021-07-31 at 2 56 32 PM](https://user-images.githubusercontent.com/84766081/127730364-099f3889-b0be-4a46-8982-821db8207f82.png)
                                 
                                 
-                                
+
+<< 자바스크립트 문자열 다루기 2. 날짜, 시간, 그리고 >>
+                               
 Day1 : 1 August 2021
 
 << 자바스크립트 문자열 다루기 3. 날짜,시간 타이머>>
@@ -217,12 +219,52 @@ ISO 8061형식의 날짜 Date객체변환
 Screen Shot 2021-08-01 at 1.58.42 PM![Screen Shot 2021-08-01 at 1 58 42 PM](https://user-images.githubusercontent.com/84766081/127759783-79884478-f110-43eb-8e30-f93fd1c1bf48.png)
 Screen Shot 2021-08-01 at 1.58.50 PM![Screen Shot 2021-08-01 at 1 58 50 PM](https://user-images.githubusercontent.com/84766081/127759788-3227a80d-469c-4a9c-af51-37bad27aa094.png)
 
+5.
+특정 날짜로 객체 생성
+
+- 년,월,일 Data생성자에 전달되는정수값, 시간값주어지지않으면 시간은 기본적으로0으로생성
+  
+6.
+미래 날짜 만들기
+- Data객체의 get,set매서드사용 
+Screen Shot 2021-08-01 at 2.04.15 PM![Screen Shot 2021-08-01 at 2 04 15 PM](https://user-images.githubusercontent.com/84766081/127759843-75dd1fb7-ebe3-4767-bd44-eebaeb294bcd.png)
+
+Screen Shot 2021-08-01 at 2.04.52 PM![Screen Shot 2021-08-01 at 2 04 52 PM](https://user-images.githubusercontent.com/84766081/127759850-6302ce1a-608b-4318-aff2-66e27d7ecc75.png)
+
+- UTC버전도 사용가능, 과거는 원하는날짜만큼 빼면됨
+  
+7.
+경과 시간 구하기
+
+두이벤트사이에 경과한 시간 구하고싶을때 첫번째 이벤트 발생시 Date 객체생성 > 두번째이벤트발생시 또다른 Date객체생성
+뺀값은 밀리초 단위로 초단위 값바꾸려면 1,000나눔
+
+Screen Shot 2021-08-01 at 2.06.57 PM![Screen Shot 2021-08-01 at 2 06 57 PM](https://user-images.githubusercontent.com/84766081/127759875-a4f490bb-dedd-491c-b6ac-4eae1d742e63.png)
 
 
+8.
+타임아웃 만들기
+
+이벤트기반에 타임아웃: window.setTimeout(실행할표현식,[밀리초단위의시간])
+
+9.
+반복 타이머 만들기
+
+똑같은 함수를 일정한 각격을 두고 반복해서 실행
+- window.setInterval
+  
+10.
+함수 클로저를 타이머와 함께 사용
+
+타이머가 붙은 함수제공하되 타이머 메서드 호출때 함수바로추가하고자할때
+- setInterval, setTimeout메서드 호출시 익명 함수를 첫번째 인수사용
+
+Screen Shot 2021-08-01 at 2.12.50 PM![Screen Shot 2021-08-01 at 2 12 50 PM](https://user-images.githubusercontent.com/84766081/127759950-d310b6ab-da93-4562-8059-ebc46ff526e8.png)
+
+Screen Shot 2021-08-01 at 2.13.27 PM![Screen Shot 2021-08-01 at 2 13 27 PM](https://user-images.githubusercontent.com/84766081/127759962-969bcd68-560c-4371-bda8-b4fae425c758.png)
+Screen Shot 2021-08-01 at 2.13.35 PM![Screen Shot 2021-08-01 at 2 13 35 PM](https://user-images.githubusercontent.com/84766081/127759964-5c06eff8-0edf-44a8-a809-79a8e490d151.png)
 
   
-  
-  
-  
+
 
                                 
